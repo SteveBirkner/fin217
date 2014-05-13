@@ -1,9 +1,13 @@
+
+//CONSTRUCTOR PATTER. Need this so you can use the decorators. 
 function Laptop() {
     this.cost = function () {return 1000;};
     this.screenSize = function () {return 11;};
     this.memorySize = function () {return 8;};
     this.driveSize = function () {return 128;};
 }
+
+//Decorator pattern. used to change the configuration of the base laptop. 
 
 function screenUp(laptop) {
     var c = laptop.cost();
