@@ -1,9 +1,34 @@
 extends layout
 
 block content
-	h1 Crime Stats per State for 2005 
-	p Welcome to #{title}
-	div(style='width: 100%; height: 80%; position: relative;')
-		div#chartdiv(style='width: 200px; height: 150px; position: absolute; bottom: 0; right: 0; z-index: 100;').
-		div#mapdiv(style='width: 100%; height: 100%').
+	h1
+		a(href='/') Laptop Config
+	h1 Price $
+	h1#price 1000
+	div
+		form(id='lapForm', action='/buy', method='post')
+			label(for='num1') First Number:
+				br
+				input(id='num1', type='number', value='', name='num1')
+			br
+			label(for='op') Operation:
+				br
+				input(type="radio", name="op", value="+", checked=op=="+")
+				| + Add
+				br
+				input(type="radio", name="op", value="-", checked=op=="-")
+				| - Subtract
+				br
+				input(type="radio", name="op", value="*", checked=op=="*")
+				| * Multiply
+				br
+				input(type="radio", name="op", value="/", checked=op=="/")
+				| / Divide
+				br
+			label(for='num2') Second Number
+				br
+				input(id='num2', type='number', value='', name='num2')
+			br
+			input(type='submit',value='Buy!')
+	div#qunit
 

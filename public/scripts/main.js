@@ -1,4 +1,5 @@
 
+
 //CONSTRUCTOR PATTER. Need this so you can use the decorators. 
 function Laptop() {
     this.cost = function () {return 1000;};
@@ -12,11 +13,11 @@ function Laptop() {
 function screenUp(laptop) {
     var c = laptop.cost();
     var s = laptop.screenSize();
-    laptop.cost = function {
+    laptop.cost = function() {
         return c + 200;
     };
 
-    laptop.screenSize = function {
+    laptop.screenSize = function() {
         return s + 4;
     };
 
@@ -25,12 +26,12 @@ function screenUp(laptop) {
 function driveUp(laptop) {
     var c = laptop.cost();
     var d = laptop.driveSize();
-    laptop.cost = function {
+    laptop.cost = function() {
         return c + 200;
     };
 
-    laptop.driveSize = function {
-        return s + 128;
+    laptop.driveSize = function() {
+        return d + 128;
     };
 
 }
@@ -38,11 +39,11 @@ function driveUp(laptop) {
 function memoryUp(laptop) {
     var c = laptop.cost();
     var m = laptop.memorySize();
-    laptop.cost = function {
+    laptop.cost = function() {
         return c + 200;
     };
 
-    laptop.screenSize = function {
+    laptop.memorySize = function() {
         return m + 8;
     };
 
