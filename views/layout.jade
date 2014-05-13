@@ -1,0 +1,20 @@
+html
+  head
+    title= title
+    block scripts
+      script(type='text/javascript', src="./scripts/jquery/jquery.js")
+      script(type='text/javascript', src="./scripts/underscore/underscore.js")
+      script(type='text/javascript', src="./scripts/backbone/backbone.js")
+      script(type='text/javascript', src="./scripts/require.js")
+      script(type'text/javascript', src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+      script(type='text/javascript', src="./ammap/ammap/ammap.js")
+      script(type='text/javascript', src="./amcharts/amcharts/amcharts.js")
+      script(type='text/javascript', src="./amcharts/amcharts/pie.js")
+      script(type='text/javascript', src="./ammap/ammap/ammap_amcharts_extension.js")
+      script(type'text/javascript', src="./ammap/ammap/maps/js/usaHigh.js")
+  link(rel='stylesheet', href='./css/style.css')
+  link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+  script(type='text/javascript', src="./scripts/main.js")
+    
+  body
+    block content
