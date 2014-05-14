@@ -1,5 +1,6 @@
 
 //
+
 //CONSTRUCTOR PATTER. Need this so you can use the decorators. 
 function Laptop() {
     this.cost = function () {return 1000;};
