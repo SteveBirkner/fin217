@@ -3,11 +3,13 @@ extends layout
 block content
 	h1
 		a(href='/') Laptop Config
+	h1
+		a(href='/prev') Previous Purchases
 	h1 Price $
 	h1#price 1000
 	div
 		form(id='lapForm', action='/buy', method='post')
-			label.asd(for='ss') Screen Size:
+			label(for='ss') Screen Size:
 				br
 				input.sub(type="radio", name="ss", value="0", checked)
 				|  11 inch

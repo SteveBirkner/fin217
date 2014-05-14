@@ -19,6 +19,7 @@ var config = require('./config/config')[env];
 mongoose.connect('mongodb://localhost/project');
 //mongoose.connect('mongodb://localhost/learning');
 require('./models/crime');
+require('./models/laptop');
 require('./models/user');
 require('./models/course');
 require('./models/assignment');

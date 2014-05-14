@@ -6,7 +6,8 @@ var passport = require('passport');
 var users = require('./controllers/users');
 var admin = require('./controllers/admin');
 var crimes = require('./controllers/crimes');
-//var assignments = require('./controllers/assignments');
+var laptop = require('./controllers/laptops');
+
 
   app.get('/', index.index);
   app.get('/admin',ensureAuthenticated , admin.main); 
@@ -16,7 +17,9 @@ var crimes = require('./controllers/crimes');
   app.get('/api/crimes', crimes.jsonlist);
   app.get('/courses/:cid', courses.findById);
   app.post('/courses/add', courses.add);
-  app.post('/courses/update/:cid', courses.update); 
+  app.post('/courses/update/:cid', courses.update);
+  app.post('/buy', laptop.buy);
+  app.get('/prev', laptop.prev);
 
   
   app.get('/users/', users.list);
